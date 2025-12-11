@@ -205,3 +205,22 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ===================================
+# AGREGADO PARA PROYECTO YOLO/VISION
+# ===================================
+
+# Ignorar la carpeta de datos (imágenes pesadas)
+data/
+
+# Ignorar las carpetas de entrenamiento de YOLO (pesan GBs)
+runs/
+yolov8*.pt
+
+# Ignorar modelos pesados (opcional: subir solo si pesa poco)
+models/*.pt
+!models/yolov8n.pt
+
+# Ignorar archivos de configuración del sistema operativo
+.DS_Store
+Thumbs.db
